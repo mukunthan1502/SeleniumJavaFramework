@@ -1,0 +1,42 @@
+
+<suite name="Suite1">
+	<test name="Test1">
+		<groups>
+
+			<define name="Partial Regression">
+				<include name="regression"></include>
+				<include name="sanity"></include>
+			</define>
+
+			<define name="linux">
+				<include name="linux.*"></include>
+			</define>
+
+			<define name="windows">
+				<include name="windows.*"></include>
+			</define>
+
+			<define name="system">
+				<include name=".*system"></include>
+			</define>
+
+			<define name="acceptance">
+				<include name="acceptance"></include>
+			</define>
+
+			<define name="smoke">
+				<include name="smoke"></include>
+			</define>
+
+			<run>
+				<include name="windows"></include>
+			</run>
+
+		</groups>
+		
+		<classes>
+			<class name="demo.TestNGGroupsDemo" />
+		</classes>
+		
+	</test>
+</suite> 

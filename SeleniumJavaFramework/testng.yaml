@@ -1,0 +1,12 @@
+name: Suite
+parallel: classes
+configFailurePolicy: skip
+tests:
+  - name: Test
+  parallel: classes
+  classes:
+    - test.Test1_GoogleSearch_TestNG_demo
+    - name: test.Test1_GoogleSearch_TestNG_demo2
+      includedMethods:
+        - name: googleSearch3
+

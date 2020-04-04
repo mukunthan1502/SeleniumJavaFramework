@@ -1,0 +1,5 @@
+ControlFocus("Open","","Edit1")
+Sleep(2500)
+ControlSetText("Open","","Edit1","C:\Selenium Projects\SeleniumJavaFramework\uploadtest.txt")
+Sleep(2500)
+ControlClick("Open","","Button1")
